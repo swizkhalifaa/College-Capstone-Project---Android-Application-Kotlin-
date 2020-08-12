@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarChatlog"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/my_border"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <Button
+        android:id="@+id/buttonBackNotifications"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_back_button"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarChatlog"
+        app:layout_constraintStart_toStartOf="@+id/toolbarChatlog"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Notifications"
+        android:textColor="@color/colorPink"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarChatlog"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarChatlog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbarChatlog" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylclerViewNotifcations"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorBlack"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarChatlog" />
+</androidx.constraintlayout.widget.ConstraintLayout>

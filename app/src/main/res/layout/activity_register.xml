@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".EntranceClasses.RegisterActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="@+id/containerOfFragments"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/containerOfFragments"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_ui" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPink"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarMain"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarMain"
+        app:layout_constraintStart_toStartOf="@+id/toolbarMain"
+        app:layout_constraintTop_toTopOf="@+id/toolbarMain" />
+
+    <EditText
+        android:id="@+id/txtbxRegisterUsername"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_purple"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="16dp"
+        android:textAllCaps="false"
+        android:textColorHint="@color/common_google_signin_btn_text_light"
+        app:layout_constraintBottom_toTopOf="@+id/txtbxRegisterEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtbxRegisterEmail"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_blue"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="16dp"
+        android:textColorHint="@color/common_google_signin_btn_text_light"
+        app:layout_constraintBottom_toTopOf="@+id/txtbxRegisterPassword"
+        app:layout_constraintEnd_toEndOf="@+id/txtbxRegisterUsername"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/txtbxRegisterUsername"
+        app:layout_constraintTop_toBottomOf="@+id/txtbxRegisterUsername" />
+
+    <EditText
+        android:id="@+id/txtbxRegisterPassword"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_bleach"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        android:textColorHint="@color/common_google_signin_btn_text_light"
+        app:layout_constraintEnd_toEndOf="@+id/txtbxRegisterEmail"
+        app:layout_constraintStart_toStartOf="@+id/txtbxRegisterEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtbxRegisterEmail" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_pinkie"
+        android:text="Register"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtbxRegisterPassword"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/txtbxRegisterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtbxRegisterPassword" />
+
+    <TextView
+        android:id="@+id/textViewAlreadyHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:text="Already have an account?"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRegister"
+        app:layout_constraintStart_toStartOf="@+id/buttonRegister"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegister"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <Button
+        android:id="@+id/buttonRegisterSelectPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/circle_button_photo_register"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewHiddenByDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="This image will be hidden by default!"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRegisterSelectPhoto"
+        app:layout_constraintStart_toStartOf="@+id/buttonRegisterSelectPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegisterSelectPhoto" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/selectPhotoImageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:civ_border_width="6dp"
+        app:civ_border_color="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textViewHiddenByDefault"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRegisterSelectPhoto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonRegisterSelectPhoto"
+        app:layout_constraintTop_toTopOf="@+id/buttonRegisterSelectPhoto"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

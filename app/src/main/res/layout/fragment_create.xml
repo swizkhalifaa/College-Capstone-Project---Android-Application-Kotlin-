@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="start">
+
+    <TextView
+        android:id="@+id/textViewPostBox"
+        android:layout_width="0dp"
+        android:layout_height="209dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/my_thick_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtbxPostBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Don't leave the chalkboard empty..."
+        android:inputType="textMultiLine"
+        android:maxLength="250"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHighlight="@color/colorBlack"
+        android:textColorHint="@color/colorGreyDark"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPostBox"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPostBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewPostBox"
+        app:layout_constraintTop_toTopOf="@+id/textViewPostBox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonCreatePost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/round_pinkie"
+        android:text="Post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPostBox" />
+
+    <TextView
+        android:id="@+id/textViewCharCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toEndOf="@+id/buttonCreatePost"
+        app:layout_constraintTop_toBottomOf="@+id/txtbxPostBox" />
+</androidx.constraintlayout.widget.ConstraintLayout>

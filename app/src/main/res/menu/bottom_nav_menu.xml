@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/button_navigation_messages"
+        android:icon="@drawable/ic_messages"
+        android:title="" />
+    <item
+        android:id="@+id/button_navigation_create_post"
+        android:icon="@drawable/ic_create"
+        android:title=""
+        />
+    <item
+        android:id="@+id/button_navigation_shuffle_search"
+        android:icon="@drawable/ic_shuffle"
+        android:title="" />
+    <item
+        android:id="@+id/button_navigation_hashtag_search"
+        android:icon="@drawable/ic_search"
+        android:title=""/>
+    </menu>

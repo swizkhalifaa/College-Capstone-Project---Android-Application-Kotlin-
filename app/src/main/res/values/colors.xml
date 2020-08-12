@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorGrey">#CCCCCC</color>
+<color name="colorWhite">#FFFFFF</color>
+<color name="colorBlack">#000000</color>
+<color name="colorPurple">#9999CC</color>
+<color name="colorPink">#D7E070B7</color>
+<color name="colorRed">#F74B66</color>
+<color name="colorBlue">#779ECB</color>
+<color name="colorGreen">#77DD77</color>
+<color name="colorBorder">#292E29</color>
+<color name="colorBleach">#FFB6C1</color>
+<color name="colorGreyDark">#555151</color>
+<color name="colorPurpleDark">#B37DF7</color>
+<color name="colorDarkGreen">#4B8A4B</color>
+</resources>

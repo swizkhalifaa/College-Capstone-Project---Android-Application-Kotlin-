@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "537250658650",
+    "firebase_url": "https://fir-database-78b1b.firebaseio.com",
+    "project_id": "fir-database-78b1b",
+    "storage_bucket": "fir-database-78b1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537250658650:android:37e74a62b691b25ec7db63",
+        "android_client_info": {
+          "package_name": "com.android.theantisocialnetwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537250658650-f0ca8ml65ubba8ul7i3pg1tf9t9t9msk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9hUI3VlqWvQFqQiB7-SceOpMHKilSooY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537250658650-f0ca8ml65ubba8ul7i3pg1tf9t9t9msk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

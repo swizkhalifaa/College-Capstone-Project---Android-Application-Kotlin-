@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/my_border"
+        app:layout_constraintBottom_toTopOf="@+id/containerOfFragments"
+        app:layout_constraintEnd_toEndOf="@+id/containerOfFragments"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/containerOfFragments"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/imageViewNotifications"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_notification_bell_24dp"
+            android:dropDownWidth="100dp"
+            android:overlapAnchor="false"
+            android:popupBackground="@drawable/my_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewMainProfilePicture"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="310dp"
+            app:civ_border_color="@color/colorBorder"
+            app:civ_border_width="1dp"
+            app:srcCompat="@drawable/circle_small_profile"
+            tools:layout_editor_absoluteX="92dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/containerOfFragments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbarMain" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/colorPurple"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconSize="35dp"
+        app:itemIconTint="@color/colorBleach"
+        app:itemTextColor="@color/colorBleach"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerOfFragments"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <TextView
+        android:id="@+id/textViewTitleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:textColor="@color/colorPink"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarMain"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarMain"
+        app:layout_constraintStart_toStartOf="@+id/toolbarMain"
+        app:layout_constraintTop_toTopOf="@+id/toolbarMain" />
+
+    <TextView
+        android:id="@+id/textViewNotificationCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="315dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/toolbarMain"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
